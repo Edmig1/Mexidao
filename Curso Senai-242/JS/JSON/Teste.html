@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var usuario = {
+            email: 'usuario@gmail',
+            senha: '123'
+        }
+        var string = JSON.stringify(usuario)
+        sessionStorage.setItem('usuario', usuario)
+    </script>
+</body>
+</html>

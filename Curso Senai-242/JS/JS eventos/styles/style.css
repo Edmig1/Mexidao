@@ -1,0 +1,43 @@
+#tudo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    height: 97vh;
+}
+
+#tudo input {
+    margin: 10px 0px;
+    padding: 10Px 20px;
+    border: 2px solid white !important;
+    border-radius: 10px;
+    font-size:1em;
+    width: fit-content;
+    background-color: transparent !important;
+    color: white;
+    outline: none
+
+}
+form{
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+form button{
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px;
+    background-color:transparent;
+    color: white;
+    border: 2px solid white !important;
+}
+form button:hover{
+    background-color: rgb(6, 209, 6);
+    transition: 0.3s;
+}
+body{
+    background-color: rgb(35, 35, 35);
+}

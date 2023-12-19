@@ -1,0 +1,11 @@
+/*[class^='col'], esse coloca uma configuração em todas as class que tiverem col no nome, já o outro coloca se col estiver em uma segunda class  */
+*{
+    padding: 0;
+    margin: 0;
+}
+p{ 
+    background-color: rgb(64, 64, 198);
+    border: 1px solid #000000;
+    height: 160px;
+    margin: 0;
+}

@@ -1,0 +1,50 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.pai{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+}
+.dive{
+    display: grid;
+    grid-template-columns: ;
+}
+.divd{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+}
+.roxo{
+    background-color: rgb(160, 46, 160);
+}
+.vermelho{
+    background-color: rgb(218, 62, 62);
+}
+.verde, .verde1{
+    background-color: greenyellow;
+}
+.azul, .azul1{
+    background-color: rgb(68, 68, 198);
+}
+
+.divd .verde-azul{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+
+.divd .azul-verde{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+}
+
+
+
+

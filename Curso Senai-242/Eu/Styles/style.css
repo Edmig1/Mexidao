@@ -1,0 +1,201 @@
+*{
+    margin: 0 ;
+    padding: 0;
+    font-family: 'Dongle', sans-serif;
+
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+nav{
+    padding-right: 10px;
+}
+nav a{
+    font-size: 1.5em;
+    padding: 20px;
+    text-decoration: none;
+    color: black;
+}
+nav a:hover{
+    text-decoration: underline;
+    color: #00ff99 ;
+}
+header p{
+    font-size: 1.5em;
+}
+.fa-file-code:before{
+    font-size: 30px;
+    margin: 10px;
+}
+
+.banner{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.imgb{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height:calc(100vh - 35.333px);
+}
+.title{
+    height:calc(100vh - 35.333px);
+    background: linear-gradient(to left,#00ff99 0%, #14b180e0 100%);
+    background-size: 500% 100%;
+    font-size: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    animation: title 20s infinite  alternate;
+}
+
+@keyframes title{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+.title h1{
+    color: white;
+    text-decoration:solid;
+    text-shadow: black 2px 2px 2px;
+}
+.p{
+    color: white;
+    font-size: 1em;
+    font-weight: 700;
+    text-shadow: black 2px 2px 2px;
+}
+#txt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.apre h2{
+    font-size: 5em;
+
+}
+.c1{
+    color: green;
+}
+#txt i{
+    padding: 3px;
+}
+#txt h2{
+    font-size: 5em;
+}
+.texto{
+    font-size: 1.7em;
+    text-align: center;
+}
+.hard{
+width: fit-content;
+display: grid;
+grid-template-columns: repeat(7, 1fr);
+justify-content: center;
+align-items: center;
+}
+.hpai{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hard img{
+    padding: 0px 10px;
+    scale: 1.2;
+}
+.hard img:hover{
+    scale: 1.4;
+}
+.hard div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#obj{
+    text-align: center;
+    height: calc(100vh - 200px);
+    background: linear-gradient(to left,#00ff99 0%, #14b180e0 100%);
+    background-size: 500% 100%;
+    color: white;
+    animation: colors 20s infinite alternate;
+
+}
+@keyframes colors{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+#obj h2{
+    font-size: 5em;
+}
+ #obj p{
+    margin: 30px;
+    font-size: 1.7em;
+    
+}
+#obj {
+    --mask:
+      radial-gradient(34.99px at 50% calc(100% - 48.00px),#000 99%,#0000 101%) calc(50% - 60px) 0/120px 100%,
+      radial-gradient(34.99px at 50% calc(100% + 18.00px),#0000 99%,#000 101%) 50% calc(100% - 30px)/120px 100% repeat-x;
+    -webkit-mask: var(--mask);
+            mask: var(--mask);
+  }
+
+  .tec{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.tec h3{
+    font-size: 5em;
+
+}
+.tec p{
+    font-size: 1.7em;
+    margin: ;
+}
+  
+footer{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    background: linear-gradient(to left,#00ff99 0%, #14b180e0 100%);
+    background-size: 300% 300%;
+    animation: colors 20s infinite alternate;
+}
+footer h4{
+    font-size: 2em;
+}
+footer i{
+    font-size: 2em;
+    padding: 0px 10px;
+}
+
+

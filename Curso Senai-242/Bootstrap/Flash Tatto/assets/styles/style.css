@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.header2{
+    height: 100vh;
+}
+.header{
+    background-image: url(../img/tatto.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+@font-face {
+    font-family: 'docalisme';
+    src: url(../fonts/DOCALLISME\ ON\ STREET.ttf);
+}
+
+#titulo{
+    font-family: 'docalisme';
+    font-size: 4em;
+}
+.nav{
+    align-self: self-start;
+}
+.nav ul li a:hover{
+    scale: 1.1;
+    transition: 0.5s ease-in-out;
+}

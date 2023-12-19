@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var pessoa = {
+            nome: 'Murilovers',
+            email: 'pessoa@gmail.com',
+            idade: 17,
+            endereco: 'birigui',
+            ola(){
+                alert('Olá, meu nome é: '+this.nome+' meu email é: '+this.email+' e tenho '+this.idade+' anos')
+            }
+
+        }
+    pessoa.ola()
+    function imprime(){
+        console.log(`${pessoa.nome}\n ${pessoa.email}\n ${pessoa.idade}\n ${pessoa.endereco} `)
+    }
+    imprime()
+    </script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+semana = {"segunda": "ulysses", "terça": "hugo", "quarta": "helen", "quinta": "iguinho", "sexta": "same of quinta" }

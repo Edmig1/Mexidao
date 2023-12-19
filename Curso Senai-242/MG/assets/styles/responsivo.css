@@ -1,0 +1,24 @@
+@media(max-width:766px){
+    body{
+        background-size: auto 100%;
+    }
+    h1{
+        font-size: 1em;
+        text-align: center;
+    }
+}
+@media(max-width:500px){
+    nav a{
+        padding: 0% 5%;
+        font-size: 1.3em;
+    }
+    #contato img{
+        width: 15%;
+    }
+}
+@media(max-width:400px){
+    nav a{
+        padding: 0% 5%;
+        font-size: 1.1em;
+    }
+}

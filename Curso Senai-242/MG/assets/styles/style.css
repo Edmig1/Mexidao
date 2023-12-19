@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(../imgs/office_design_desks_80537_3840x2160\ 1.png);
+    background-color: black;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+header nav{
+    font-family: 'Playfair Display', serif;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav a{
+    padding: 10px 10px;
+    position: relative;
+    color: white;
+    text-decoration: none;
+}
+nav a::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+nav a:hover::after{
+    width: 100%;
+}
+header a{
+    text-decoration: none;
+    color: white;
+    padding: 0% 1%;
+    text-align: center;
+    font-size: 1.5em;
+}
+#total{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#titulo{
+    font-family: 'Playfair Display', serif;
+    font-size: 2.7em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+#contato{
+display: flex;
+justify-content: center;
+
+}
+#contato img{
+    width: 8%;
+    padding: 5% 3%;
+    transition: 0.3s all;
+}
+#contato img:hover{
+    scale: 1.5;
+    transition: 0.5s all;
+}
+
+#container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}

@@ -1,0 +1,1 @@
+pessoas = {"Arthur rei do capa": "preta", "Bazinga explode piriquita": "branca", "Murilovers chokito": "branca", "careca birthday": "branca"}

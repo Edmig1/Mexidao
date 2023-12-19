@@ -1,0 +1,20 @@
+@media(max-width: 500px){
+    .divd .verde-azul {
+        grid-template-rows: 2fr 1fr;
+        grid-template-columns: auto;
+
+}
+
+@media(max-width: 500px){
+    .divd .azul-verde{
+        grid-template-rows: 1fr 2fr;
+        grid-template-columns: auto;
+
+}
+
+@media(max-width: 300px){
+    .pai{
+        grid-template-rows: ;
+        grid-template-columns: auto;
+    }
+}

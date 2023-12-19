@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">   
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Calculadore de IMC</title>
+</head>
+<body>
+    <div id="tudo">
+        <h1>Calculadora de IMC</h1>
+        <form action="" id="form">
+            <label for=""></label>
+            <input type="number" placeholder="Digite seu peso em Kg" id="peso"></input>
+            <input type="number" placeholder="Digite sua altura em M" id="altura"></input>
+            <button id="enviar">Enviar Dados</button>
+
+        </form>
+        <p id="p"></p>
+    </div>
+    <script>
+        var peso = document.getElementById("peso");
+        var altura = document.getElementById("altura");
+        var enviar = document.getElementById("enviar");
+        var form = document.getElementById("form")
+        var p = document.getElementById("p")
+        
+        function clicar(){
+            event.preventDefault()
+            var imc = peso.value/(altura.value**2)
+            p.innerHTML = "O número do índice é: " + imc.toFixed(1)
+            if(imc <18.5){
+                p.innerHTML = "O número do índice é: " + imc.toFixed(1) + " Que corresponde a: Magreza"
+            }
+            else if(imc >= 18.5 && imc <= 24.9){
+                p.innerHTML = "O número do índice é: " + imc.toFixed(1) + " Que corresponde a: Normal"
+            }
+            else if(imc >= 25 && imc <= 29.9){
+                p.innerHTML = "O número do índice é: " + imc.toFixed(1) + " Que corresponde a: Sobrepeso"
+            }
+            else if(imc >= 30 && imc <= 39.9){
+                p.innerHTML = "O número do índice é: " + imc.toFixed(1) + " Que corresponde a: Obesidade"
+            }
+            else if(imc >= 40){
+                p.innerHTML = "O número do índice é: " + imc.toFixed(1) + " Que corresponde a: Obesidade Grave"
+            }   
+            if(imc < 0){
+                alert("O número é menor do que zero, insira outro por favor")
+                p.innerHTML = ""
+            }   
+            
+        }
+
+        enviar.addEventListener("click", clicar)
+    </script>
+
+</body>
+</html>

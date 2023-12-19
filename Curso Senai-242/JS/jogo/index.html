@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jogo de Plataforma 2D</title>
+    <style>
+        #canvas {
+            border: 1px solid black;
+            background-image: url('forest_background.jpg');
+            background-size: cover;
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="canvas" width="800" height="400"></canvas>
+
+    <script>
+        // Configurações do jogo
+        const canvas = document.getElementById('canvas');
+        const ctx = canvas.getContext('2d');
+        const width = canvas.width;
+        const height = canvas.height;
+
+        // Personagem principal
+        const player = {
+            x: 50,
+            y: 300,
+            width: 50,
+            height: 50,
+            speed: 5,
+            velX: 0,
+            velY: 0,
+            jumping: false
+        };
+
+        // Atualiza a posição do jogador
+        function update() {
+            // Limpa o canvas
+            ctx.clearRect(0, 0, width, height);
+
+            // Desenha o fundo da floresta
+            ctx.fillStyle = '#82a43a';
+            ctx.fillRect(0, 0, width, height);
+
+            // Desenha o jogador
+            ctx.fillStyle = 'blue';
+            ctx.fillRect(player.x, player.y, player.width, player.height);
+
+            // Movimenta o jogador
+            if (player.jumping) {
+                player.velY += 0.5;
+                player.y += player.velY;
+                if (player.y >= height - player.height) {
+                    player.y = height - player.height;
+                    player.jumping = false;
+                }
+            }
+
+            // Atualiza o canvas
+            requestAnimationFrame(update);
+        }
+
+        // Controla as ações do jogador
+        function keyDown(e) {
+            if (e.key === 'ArrowUp' || e.key === ' ') {
+                if (!player.jumping) {
+                    player.jumping = true;
+                    player.velY = -player.speed * 2;
+                }
+            }
+            if (e.key === 'ArrowLeft') {
+                player.velX = -player.speed;
+            }
+            if (e.key === 'ArrowRight') {
+                player.velX = player.speed;
+            }
+        }
+
+        function keyUp(e) {
+            if (e.key === 'ArrowLeft' || e.key === 'ArrowRight') {
+                player.velX = 0;
+            }
+        }
+
+        // Eventos de teclado
+        document.addEventListener('keydown', keyDown);
+        document.addEventListener('keyup', keyUp);
+
+        // Inicia o jogo
+        update();
+    </script>
+</body>
+</html>
