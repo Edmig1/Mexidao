@@ -1,0 +1,595 @@
+/* Root é configuração para cores */
+:root {
+    --cor-principal: #f4549e;
+    --cor-topo: #D8F1FB;
+    --cor-preta: black;
+    --cor-branca: white;
+    --cor-fundo: #FAFBFF;
+    --cor-verde: #1CF365;
+    --cor-vermelho: #DF2F2F;
+
+
+}
+
+/* asterisco signifca que a programação deve pegar todo o site, header, main, footer etc! */
+* {
+    padding: 0px;
+    margin: 0px;
+    transition: all 0.4s;
+    font-family: 'Oswald', sans-serif;
+    box-sizing: border-box;
+}
+
+#header {
+    background-color: var(--cor-topo);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* text decoration none tira o sublinhado horrivel que fica em link para redirecionamento, feio pra krl! */
+#header nav a {
+    text-decoration: none;
+    color: var(--cor-preta);
+}
+
+#header nav a:hover {
+    color: white;
+    background-color: var(--cor-principal);
+    border-radius: 30px;
+
+}
+
+/* ponto abre class e hashtag abre id */
+.MarginLateral {
+    margin: 0px 20px;
+}
+
+main #Banner {
+    background-image: url(../Img/Banner.png);
+    height: calc(100vh - 116px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.cuidados {
+    padding: 20px;
+}
+
+main #Banner h1 {
+    color: var(--cor-principal);
+    font-size: 2em;
+    /* EM é 16 pt mas se adapta conforme a tela do dispositivo!! */
+
+}
+
+main #Banner .Banner-button {
+    color: white;
+    background-color: var(--cor-principal);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    text-decoration: none;
+
+
+}
+
+/* animação do botão */
+main #Banner button:hover {
+    cursor: pointer;
+    font-size: large;
+    padding: 25px;
+}
+
+/* todos os paddings de mesmo pixel podem ficar no mesmo bloco para facilitar */
+#header,
+#footer,
+main #beneficios #beneficios-nossos-beneficios,
+main #Banner .Banner-button,
+#Bem-vindo div,
+#header nav a:hover,
+main #beneficios #beneficios-servicos,
+main #formulario #formulario-form form,
+main #form #form-formulario-login form,
+main #consulta {
+    padding: 15px;
+}
+
+/* display grid para dividir o espaço em 2 partes iguais para o texto */
+#Bem-vindo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+
+}
+
+#Bem-vindo #Bem-vindo-Boas-vindas h3 {
+    color: var(--cor-principal);
+    margin-bottom: 10px;
+}
+
+main #beneficios {
+    background-color: var(--cor-fundo);
+    color: var(--cor-principal);
+}
+
+main #beneficios #beneficios-nossos-beneficios,
+main #formulario #formulario-avaliacao,
+#footer {
+    text-align: center;
+}
+
+/* dá pra fazer com grid ou com flex */
+main #beneficios #beneficios-servicos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+}
+
+/* entrou na section, na div e depois no próprio formulário */
+main #formulario #formulario-form form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* display block serve pra deixar tudo alinhado um em cima do outro */
+main #formulario #formulario-form input {
+    display: block;
+    padding: 8px;
+    border: none;
+    /* outiline tira a bordinha do input */
+    outline: none;
+    /* border bottom serve pra por borda só em baixo */
+    border-bottom: 1px solid black;
+    border-radius: 5px;
+    width: 355px;
+    margin-bottom: 10px;
+}
+
+main #formulario #formulario-form form button {
+    padding: 8px;
+    border: none;
+    background-color: var(--cor-principal);
+    color: white;
+    border-radius: 10px;
+    width: 355px;
+    cursor: pointer;
+
+}
+
+main #formulario #formulario-form {
+    background-image: url(../Img/dog.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#footer {
+    background-color: var(--cor-topo);
+}
+
+/* ---------------------------------------------Aqui começa o Login-------------------------------------------------------------- */
+
+#logindog h3 {
+    text-align: center;
+    padding: 60px;
+    font-size: 2em;
+}
+
+#header nav a {
+    padding-right: 10px;
+}
+
+main #logindog #logindog-divform form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main #logindog #logindog-divform form input,
+main #form #formulario-form1 input {
+    display: block;
+    padding: 8px;
+    border: none;
+    /* outiline tira a bordinha do input */
+    outline: none;
+    /* border bottom serve pra por borda só em baixo */
+    border-bottom: 1px solid black;
+    border-radius: 5px;
+    width: 500px;
+    margin-bottom: 10px;
+
+}
+
+main #logindog #logindog-divform form button:hover,
+#logindog a:hover {
+    font-size: large;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+main #logindog #logindog-divform form button:hover {
+    padding-left: 240px;
+}
+
+#formbuttonlogar {
+    padding: 8px;
+    border: none;
+    background-color: var(--cor-principal);
+    color: white;
+    border-radius: 10px;
+    width: 500px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-left: 20px;
+}
+
+#logindog a {
+    padding: 8px;
+    border: none;
+    background-color: var(--cor-principal);
+    color: white;
+    border-radius: 10px;
+    width: 500px;
+    cursor: pointer;
+    text-align: center;
+}
+
+main #form #form-formulario-login form {
+    padding: 15px;
+}
+
+
+main #form #form-formulario-login form {
+    padding: 15px;
+}
+
+main #form #form-formulario-login form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+main #form #form-formulario-login form button,
+#form #teste {
+    padding: 8px;
+    border: none;
+    background-color: var(--cor-principal);
+    color: var(--cor-branca);
+    border-radius: 10px;
+    width: 380px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    text-decoration: none;
+
+}
+
+main #form #form-formulario-login form input,
+#form #teste {
+    display: block;
+    padding: 8px;
+    border: none;
+    outline: none;
+    /* tira a borda mais forte /
+    border-bottom: 1px solid black;
+    / seleciona 1px em linha reta */
+    border-bottom: 1px solid black;
+    border-radius: 10px;
+    width: 400px;
+    margin-bottom: 10px;
+}
+
+#inscrevase {
+    padding: 100px;
+}
+
+main #form #form-formulario-login form button:hover,
+#form #teste:hover {
+    font-size: large;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+main #form {}
+
+#teste {
+    padding: 10px;
+}
+
+/* ------------------------------------------Aqui começa o Registro-------------------------------------------------------------- */
+
+main #form {
+    display: flex;
+    flex-direction: column;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+
+main #form #textofoda h1 {
+    text-align: center;
+    width: 168px;
+    height: 35px;
+    left: 556px;
+    top: 77px;
+    margin-bottom: 20px;
+}
+
+main #form #formulario-form1 input {
+    margin-bottom: 19px;
+}
+
+main #form form label {
+    display: block;
+}
+
+#formbotao {
+    padding: 8px;
+    border: none;
+    background-color: var(--cor-principal);
+    color: white;
+    border-radius: 10px;
+    width: 500px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 215px;
+}
+
+main #form form a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+
+/* -------------------------------dashboard-------------------------------------------------------------------------------- */
+
+#dashboard {
+
+    background-color: var(--cor-topo);
+    height: 100vh;
+}
+
+#maind {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 3fr;
+    height: 100vh;
+
+}
+
+#dashboard #dashboarddiv div {
+    margin: 30px;
+    background-color: var(--cor-principal);
+    text-align: center;
+    padding: 10px;
+    border-radius: 100px;
+}
+
+#dashboard #dashboarddiv a {
+    text-decoration: none;
+    color: black;
+}
+
+#dashboard #dashboarddiv div:hover {
+    font-size: large;
+    padding: 20px;
+}
+
+#maind {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    height: 100vh;
+}
+
+main #dash div {
+    background-color: white;
+    border: 5px solid black;
+}
+
+main #dash div {
+    border-radius: 30px;
+    width: 350px;
+    display: inline-block;
+    margin: 20px;
+    padding: 60px;
+}
+
+main #dash #azul {
+    border-color: rgb(63, 149, 220);
+    text-align: center;
+    font-size: 1.5em;
+}
+
+main #dash #verde {
+    border-color: rgb(72, 211, 86);
+    text-align: center;
+    font-size: 1.5em;
+}
+
+main #dash #amarelo {
+    border-color: #dfe750;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+main #dash #vermelho {
+    text-align: center;
+    border-color: rgb(222, 59, 59);
+    font-size: 1.5em;
+}
+
+
+
+/* --------------------------------Aqui começa as consultas --------------------------------------  */
+
+main .confirma button {
+    color: white;
+    background-color: var(--cor-verde);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: larger;
+    width: 200px;
+}
+
+main .cancela button {
+    color: white;
+    background-color: var(--cor-vermelho);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: larger;
+    width: 200px;
+    margin-left: 12px;
+}
+
+main .butoes {
+    display: flex;
+    flex-direction: row;
+}
+
+#mainc .nome-consulta,
+#mainc .data-consulta,
+#mainc .hora-consulta,
+#mainc .mais-info {
+
+    display: grid;
+    grid-template-columns: auto;
+
+}
+
+#mainc .pergunta {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#mainc .nome-consulta input {
+    width: 125vh;
+}
+
+#mainc .data-consulta input,
+#mainc .hora-consulta input {
+    width: 20vh;
+}
+
+#mainc .mais-info,
+#mainc .pergunta,
+#mainc .butoes {
+    padding-top: 15px;
+}
+
+#mainc .pergunta input{
+    padding: 8px;
+    border: none;
+    outline: none;
+    /* tira a borda mais forte /
+    border-bottom: 1px solid black;
+    / seleciona 1px em linha reta */
+    border-bottom: 1px solid black;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+
+/* daqui pra cima é os botão */
+/* ------------------------------CLIENTES--------------------------------------------- */
+main h1{
+    padding-left: 15px;
+}
+
+#formclientes .grid-2{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+
+}
+
+#formclientes .grid-4{
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 1fr;
+
+}
+
+#formclientes .grid-3{
+    display: grid;
+    grid-template-columns: 2fr 3fr 1fr;
+
+}
+
+#formclientes label {
+    display: block;
+}
+
+#formclientes .grid-2 input,
+.grid-4 input,
+.grid-3 input{
+    display: block;
+    padding: 8px;
+    border: none;
+    /* outiline tira a bordinha do input /
+    outline: none;
+    / border bottom serve pra por borda só em baixo */
+    border-bottom:1px solid black;
+    border-radius: 5px;
+    width: 95%;
+
+
+}
+
+.form-nome input{
+
+}
+
+#fomulario-clientes form{
+    padding-left: 20px;
+}
+
+#fomulario-clientes .verdin button{
+    color: white;
+    background-color:var(--cor-verde);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: larger;
+    width: 200px;
+}
+#fomulario-clientes .botan-vermelho{
+    color: white;
+    background-color:var(--cor-vermelho);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: larger;
+    width: 200px;
+    margin-left: 12px;
+}
+
+#fomulario-clientes .botoes{
+    display:flex;
+    flex-direction: row;
+    padding-top: 20px;
+}

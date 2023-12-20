@@ -1,0 +1,85 @@
+/* media query, condição, se (isso acontece) algo ocorre */
+@media(max-width: 980px) {
+    #Bem-vindo {
+        display: block;
+    }
+}
+
+@media(max-width: 823px) {
+    main #formulario #formulario-form {
+        background-image: none;
+    }
+}
+
+@media(max-width: 600px) {
+    main #beneficios #beneficios-servicos {
+        display: block;
+    }
+}
+
+/* ------------------------------------Login---------------------------------------------------------------------- */
+@media(max-width: 415px) {
+
+    #form-formulario-login form div,
+    main #form #form-formulario form input,
+    main #form #form-formulario-login form input,
+    main #form #form-formulario form button,
+    main #form #form-formulario-login form button,
+    #form #teste {
+        width: 100%;
+    }
+
+}
+
+/* ------------------------------------------dashboard----------------------------------------------------------------------------- */
+@media(max-width: 600px) {
+    main #dash div {
+        width: 200px !important;
+    }
+}
+
+/* --------------------------------------------register-------------------------------------------------------------------
+ */
+
+@media(max-width: 600px) {
+
+    #mainr #form #formulario-form1 form input,
+    #mainr #form #formulario-form1 form button {
+        width: 200px;
+    }
+}
+
+/* -----------------------------------------consultas--------------------------------------------------------------- */
+
+@media(max-width: 900px) {
+
+    #mainc .pergunta,
+    #mainc .butoes {
+        display: block;
+    }
+}
+
+@media(max-width: 700px) {
+
+    #mainc .nome-consulta input,
+    #mainc .pergunta input {
+        width: auto;
+    }
+}
+
+
+/* --------------------------------------------clientes------------------------------------------------- */
+@media(max-width: 435px){
+    #fomulario-clientes .botoes{
+        display: block;
+    }
+}
+
+@media(max-width: 305px){
+    #formclientes .grid-2,
+    #formclientes .grid-4,
+    #formclientes .grid-3{
+        display: block;
+
+    }
+}

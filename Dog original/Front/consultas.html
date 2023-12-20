@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/mobile.css">
+    <title>Consultas</title>
+</head>
+
+<body>
+    <header id="header">
+        <picture>
+            <img src="../Img/logo.png" alt="logo">
+        </picture>
+        <nav>
+            <a href="index.html">Sair</a>
+        </nav>
+    </header>
+
+    <main id=mainc>
+        <section id="consulta">
+            <div class="texto-consulta">
+                <h1>Registrar uma consulta</h1>
+            </div>
+            <div class="consulta-form">
+                <form action="">
+                    <div class="pergunta">
+                        <div class="nome-consulta">
+                            <label for="nome-con">Nome completo do cliente</label>
+                            <input type="text" name="nome-con" id="nome-con" required
+                                placeholder="Nome completo do cliente" minlength="4">
+                        </div>
+                        <div class="data-consulta">
+                            <label for="data-con">Data da consulta</label>
+                            <input type="date" name="data-con" id="data-con" required placeholder="d/mm/yyyy">
+                        </div>
+                        <div class="hora-consulta">
+                            <label for="hora-con">Hora da consulta</label>
+                            <input type="time" name="hora-con" id="hora-con">
+                        </div>
+                    </div>
+                    <div class="mais-info">
+                        <label for="info" id="labinfo">Observações adicionais</label>
+                        <textarea name="info" id="info" cols="200" rows="10"></textarea>
+                    </div>
+                    <div class="butoes">
+                        <div class="confirma">
+                            <button type="subbit" id="botao-confirma">Salvar</button>
+                        </div>
+                        <div class="cancela">
+                            <button type="reset" id="botao-cancela">Cancelar</button>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+
+        </section>
+    </main>
+</body>
